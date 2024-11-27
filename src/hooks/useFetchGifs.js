@@ -6,7 +6,7 @@ export const useFetchGifs = ( category ) => {
 
     const [images, setImages] = useState([]);
     const [isLoading, setIsloading] = useState( true );
-
+    
     const getImages = async() => { //const nueva asincronica
         const newImages = await getGifs( category );
         setImages(newImages); //cuando recibe la resp nueva setea el valor
@@ -15,6 +15,8 @@ export const useFetchGifs = ( category ) => {
 
     useEffect( () => {
         getImages();
+        
+
     }, []); 
 
     return {

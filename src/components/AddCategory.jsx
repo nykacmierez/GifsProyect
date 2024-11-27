@@ -23,6 +23,8 @@ export const AddCategory = ({ onNewCategory }) => {
 
         <form onSubmit={ onSubmit }>
             <input
+                id="search-gifs"
+                name="Saitama"
                 type="text"
                 placeholder="Buscar gifs"
                 value={ inputValue }
